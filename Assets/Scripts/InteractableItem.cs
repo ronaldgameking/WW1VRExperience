@@ -1,27 +1,31 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Oculus.Interaction;
 using UnityEngine;
 
+// [RequireComponent(typeof(Rigidbody))]
+// [RequireComponent(typeof(Grabbable))]
+// [RequireComponent(typeof(GrabInteractable))]
 public class InteractableItem : MonoBehaviour
 {
     public GameObject PopupUIGameObject;
     public string NarrotorSoundname = "en_us:germangenades";
 
-    public GameObject ActivatorObject = null;
-    //TODO: Somehow get a held object
-    public GameObject AbstractHeldObject = null;
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.GetComponent<PlayerTag>() != null)
+        if (other.gameObject.GetComponent<ItemTag>() != null)
         {
-            if (AbstractHeldObject == null ||
-                AbstractHeldObject != ActivatorObject)
-                return;
             
             PopupUIGameObject.SetActive(true);
             AudioManager.Instance.Play(NarrotorSoundname);
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<ItemTag>() != null)
+        {
+            PopupUIGameObject.SetActive(false);
+            AudioManager.Instance.FadeOut(NarrotorSoundname);
         }
     }
 }

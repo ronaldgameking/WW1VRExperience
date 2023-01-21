@@ -1,7 +1,4 @@
-﻿namespace Ronald.Tags
+﻿public class PlayerTag : Tag
 {
-    public class PlayerTag
-    {
-        
-    }
+    
 }

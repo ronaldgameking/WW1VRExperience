@@ -19,4 +19,13 @@ public class InteractableItem : MonoBehaviour
             AudioManager.Instance.Play(NarrotorSoundname);
         }
     }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<ItemTag>() != null)
+        {
+            PopupUIGameObject.SetActive(false);
+            AudioManager.Instance.FadeOut(NarrotorSoundname);
+        }
+    }
 }

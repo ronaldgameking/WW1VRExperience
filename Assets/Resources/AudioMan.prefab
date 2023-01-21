@@ -55,4 +55,4 @@ MonoBehaviour:
     Loop: 0
     SpacialBlend: 0
     MixerGroup: {fileID: 0}
-  fadeOutDuration: 2
+  fadeOutDuration: 1

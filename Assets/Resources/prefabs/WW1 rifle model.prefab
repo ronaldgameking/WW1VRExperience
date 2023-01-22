@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8434376329501476894
+--- !u!1 &4905562625054444160
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9099307787759276708}
-  - component: {fileID: 5325761286382378241}
-  - component: {fileID: 7929731622499887563}
-  - component: {fileID: 7797298236616811993}
-  - component: {fileID: 403146340987218377}
-  - component: {fileID: 5725482150822770292}
-  - component: {fileID: -2674981257871775104}
+  - component: {fileID: 5719535912413417530}
+  - component: {fileID: 8714469739913731999}
+  - component: {fileID: 6851368420737428309}
+  - component: {fileID: 5248214082506304245}
+  - component: {fileID: 5248214082506304250}
+  - component: {fileID: 5248214082506304251}
+  - component: {fileID: 5248214082506304244}
   m_Layer: 0
-  m_Name: german grenades (grabbable)
+  m_Name: WW1 rifle model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9099307787759276708
+--- !u!4 &5719535912413417530
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.515, y: 1.09, z: -31.639}
-  m_LocalScale: {x: 0.05142345, y: 0.05142345, z: 0.05142345}
+  m_GameObject: {fileID: 4905562625054444160}
+  m_LocalRotation: {x: -0.5503523, y: 0.32177886, z: 0.42758894, w: 0.64088887}
+  m_LocalPosition: {x: -115.46, y: 4.5, z: -28.15}
+  m_LocalScale: {x: 32.275536, y: 32.275536, z: 32.275536}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5325761286382378241
+  m_LocalEulerAnglesHint: {x: -78.698, y: -17.275, z: 81.621}
+--- !u!33 &8714469739913731999
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
-  m_Mesh: {fileID: -707931662024081901, guid: 4ea1d87aa3815754ebb911b4400a7595, type: 3}
---- !u!23 &7929731622499887563
+  m_GameObject: {fileID: 4905562625054444160}
+  m_Mesh: {fileID: 8841435833573185129, guid: 11f9b15adeb2c534482658687ebd71d8, type: 3}
+--- !u!23 &6851368420737428309
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
+  m_GameObject: {fileID: 4905562625054444160}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0237d8a1b742c264db963b501a75213f, type: 2}
+  - {fileID: 2100000, guid: f44525c50f2f565499d8d5cc52059acd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -87,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7797298236616811993
+--- !u!54 &5248214082506304245
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
+  m_GameObject: {fileID: 4905562625054444160}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -103,36 +103,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &403146340987218377
-MonoBehaviour:
+--- !u!64 &5248214082506304250
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
+  m_GameObject: {fileID: 4905562625054444160}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 5725482150822770292}
-  _rigidbody: {fileID: 7797298236616811993}
-  _grabSource: {fileID: 0}
-  _useClosestPointAsGrabSource: 0
-  _releaseDistance: 0
-  _resetGrabOnGrabsUpdated: 1
-  _physicsGrabbable: {fileID: 0}
---- !u!114 &5725482150822770292
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8841435833573185129, guid: 11f9b15adeb2c534482658687ebd71d8, type: 3}
+--- !u!114 &5248214082506304251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
+  m_GameObject: {fileID: 4905562625054444160}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
@@ -144,17 +135,26 @@ MonoBehaviour:
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
   _maxGrabPoints: -1
---- !u!64 &-2674981257871775104
-MeshCollider:
+--- !u!114 &5248214082506304244
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8434376329501476894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 4905562625054444160}
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -707931662024081901, guid: 4ea1d87aa3815754ebb911b4400a7595, type: 3}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a1bc992571301d4a9602ac95ef4c71a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: 5248214082506304251}
+  _rigidbody: {fileID: 5248214082506304245}
+  _grabSource: {fileID: 0}
+  _useClosestPointAsGrabSource: 0
+  _releaseDistance: 0
+  _resetGrabOnGrabsUpdated: 1
+  _physicsGrabbable: {fileID: 0}
